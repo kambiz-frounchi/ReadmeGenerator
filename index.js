@@ -21,7 +21,7 @@ const questions = [
     {
         type: `input`,
         name: `usage`,
-        message: `Enter the usage for your application`
+        message: `Enter instructions and examples as to the usage of your application`
     },
     {
         type: `input`,
@@ -37,7 +37,7 @@ const questions = [
         type: `list`,
         name: `license`,
         message: `Enter the license you intend to use for your application`,
-        choices: [`MIT`, `Apache`, `MPL`, `GPL`, `AGPL`]
+        choices: [`MIT`, `Apache 2.0`, `MPL 2.0`, `GNU GPL v3`, `GNU AGPL v3`]
 
     },
     {
@@ -54,7 +54,11 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err => console.log(err));
+    fs.writeFile(fileName, data, error => {
+        if (error) {
+            console.log(error)
+        }
+    });
 }
 
 // function to initialize program
@@ -66,7 +70,9 @@ function init() {
         writeToFile("readme_samples/README.md", markDown);
     })
     .catch (error => {
-        console.log(error);
+        if (error) {
+            console.log(error);
+        }
     });
 }
 
