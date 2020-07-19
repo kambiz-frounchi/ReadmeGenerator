@@ -20,7 +20,7 @@ You can install this application by cloning the github repo (git clone git@githu
 
 ## Usage
 
-Please watch the walkthrough video to see an example of how to use this application.
+Please watch [this walkthrough video](https://drive.google.com/file/d/15aodtD5gAWWNhgOcHnl9JZzMrKF8tCIp/view) to see an example of how to use this application.
 
 ## License
 Licensed under the GNU GPL v3 license.
@@ -35,4 +35,4 @@ This application can be tested manually. There are future plans for writing auto
 
 My github username is @kambiz-frounchi and here is my [github profile](https://github.com/kambiz-frounchi). 
 
-Please direct all questions about this application to kambiz.frounchi@gmail.com .
+Please direct all questions about this application to kambiz.frounchi@gmail.com.
