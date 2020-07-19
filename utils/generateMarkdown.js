@@ -26,16 +26,16 @@ ${determineBadge(data.license)}
 ${data.description}
 
 ## Table of Contents
-[Installation](#Installation)
-[Usage](#Usage)
-[License](#License)
-[Contributing](#Contributing)
-[Tests](#Tests)
-[Questions](#Questions)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+* [Questions](#Questions)
 
 ## Installation
 
-${data.installation}
+${data.installationInstructions}
 
 ## Usage
 
@@ -44,13 +44,17 @@ ${data.usage}
 ## License
 Licensed under the ${data.license} license.
 
+## Contributing
+${data.contributionGuidelines}
+
 ## Tests
+${data.testInstructions}
 
 ## Questions
 
-My github username is @${data.username} and my github profile is https://github.com/${data.username}.
+My github username is @${data.username} and here is my [github profile](https://github.com/${data.username}). \n
 Please direct all questions about this application to ${data.email}.
 `;
-  }
+}
   
   module.exports = generateMarkdown;
